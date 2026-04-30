@@ -5,11 +5,13 @@ import { Description } from './Title'
 function App() {
 
   return (
-    <div className="App">
+    // <div className="App">
+    <>
       <Title />
       <p>This is a simple React app.</p>
       <Description />
-    </div>
+    </>
+    // </div>
   )
 }
 
