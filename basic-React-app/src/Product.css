@@ -1,0 +1,9 @@
+.Product {
+    /* background-color: lightblue; */
+    padding: 5px;
+    border-radius: 25px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    
+}
