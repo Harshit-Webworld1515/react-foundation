@@ -4,6 +4,7 @@ import Title from './Title'
 import { Description } from './Title'
 // import Product from './Product'
 import ProductTab from './ProductTab'
+import { Itemlist,ArticleTab } from './ProductTab'
 function App() {
 
   return (
@@ -15,7 +16,14 @@ function App() {
       <p>Calculating : 17*167={17 * 167}</p>
       <br />
       <ProductTab />
+      <br />
+      <h1>Item List</h1>
+      <Itemlist />
+      <br />
+      <h1>Article Tab</h1>
+      <ArticleTab />
     </>
+
     // </div>
   )
 }
