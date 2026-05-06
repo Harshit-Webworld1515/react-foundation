@@ -36,17 +36,22 @@ function Item({ name, price=40, quality }) {
 }
 }
 function Article({ para1, genre ,writer,Liked }) {
+    //to render an array of list items in React, we can use the map() method to iterate over the array
     const listItems = genre.map((item) => <li>{item}</li>);
+    // adding inline  dynamic styles in React
+    let condtion = Liked > 70
+    let styles = {
+        backgroundColor:condtion ? "lightgreen" : "",
+        }
     return (
-        <div className="Article">
+        <div className="Article" style={styles}>
             <h3>Article Heading</h3>
             <p>Genre: <ul>{listItems}</ul></p>
             <p>{para1}</p>
             <p>Writer: {writer.a || writer.b}</p>
             <p>Liked: {Liked}</p>
             {/* Apply conditional rendering */}
-
-            {Liked > 70 ? <p>"Trending"</p>: <a href="#">Read more</a>}
+            {condtion ? <p>"Trending"</p>: <a href="#">Read more</a>}
             <Button text="like" />
             <Button text="dislike" />
         </div>
