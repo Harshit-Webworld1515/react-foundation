@@ -5,6 +5,7 @@ import { Description } from './Title'
 // import Product from './Product'
 import ProductTab from './ProductTab'
 import { Itemlist,ArticleTab } from './ProductTab'
+import MsgBox from './MsgBox'
 function App() {
 
   return (
@@ -22,6 +23,9 @@ function App() {
       <br />
       <h1>Article Tab</h1>
       <ArticleTab />
+      <br />
+      <h1>Message Box</h1>
+      <MsgBox />
     </>
 
     // </div>
