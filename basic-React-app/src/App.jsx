@@ -4,7 +4,7 @@ import Title from './Title'
 import { Description } from './Title'
 // import Product from './Product'
 import ProductTab from './ProductTab'
-import { Itemlist,ArticleTab } from './ProductTab'
+import { Itemlist,ArticleTab, ObjectTab } from './ProductTab'
 import MsgBox from './MsgBox'
 function App() {
 
@@ -26,6 +26,9 @@ function App() {
       <br />
       <h1>Message Box</h1>
       <MsgBox />
+      <br />
+      <h1 style={{ textAlign: "center" }}>Blockbuster deals Shop now!</h1>
+      <ObjectTab />
     </>
 
     // </div>

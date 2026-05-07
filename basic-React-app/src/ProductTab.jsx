@@ -1,4 +1,4 @@
-import Product, { Item , Article} from "./Product"
+import Product, { Item , Article, Object} from "./Product"
 function ProductTab() {
     return (
         <>
@@ -36,6 +36,23 @@ function ArticleTab() {
         </div>
     )
 }
+function ObjectTab(){
+    const styles = {
+        display: "flex",
+        flexWrap: "wrap",
+        gap: "20px",
+        justifyContent: "center",
+        alignItems: "center",
+    }
+    return (
+        <div className="ObjectTab" style={styles}>
+            <Object title="Logitech Keyboard" idx={0} />
+            <Object title="Apple MacBook Pro" idx={1} />
+            <Object title="Dell XPS 13" idx={2} />
+            <Object title="HP Spectre x360" idx={3} />
+        </div>
+    )
+}
 
 export default ProductTab
-export { Itemlist, ArticleTab }
+export { Itemlist, ArticleTab, ObjectTab }
