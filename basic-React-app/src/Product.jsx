@@ -68,11 +68,11 @@ function Object({ title, idx }) {
         ["Compact and portable laptop.","Perfect for on-the-go productivity."],
         ["Sleek design excellent performance.","Experience the best of both worlds."]
     ]
-    let desc = description[idx].map((item, index) => <p key={index}><ul><li>{item}</li></ul></p>)
+    let desc = (<ul>{description[idx].map((item, index) => (<li key={index}>{item}</li>))}</ul>)
     return (
         <div className="Object">
             <h3>{title}</h3>
-            <p>{desc}</p>
+            {desc}
             <Price OldPrice={OldPrice[idx]} NewPrice={NewPrice[idx]} />
         </div>
     )

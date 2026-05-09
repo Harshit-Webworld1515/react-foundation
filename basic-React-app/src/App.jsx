@@ -6,6 +6,8 @@ import { Description } from './Title'
 import ProductTab from './ProductTab'
 import { Itemlist,ArticleTab, ObjectTab } from './ProductTab'
 import MsgBox from './MsgBox'
+import { Button2 } from './Button'
+import Form from './Form'
 function App() {
 
   return (
@@ -29,6 +31,14 @@ function App() {
       <br />
       <h1 style={{ textAlign: "center" }}>Blockbuster deals Shop now!</h1>
       <ObjectTab />
+      <br />
+      <h1 style={{ textAlign: "center" }}>Button</h1>
+      <Button2 />
+      <br />
+      <h1>Form</h1>
+      <Form />
+      <br />
+      <h3 style={{ textAlign: "center", textDecoration: "underline", }}><i>Thank you for visiting our website!</i></h3>
     </>
 
     // </div>

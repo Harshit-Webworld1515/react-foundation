@@ -16,7 +16,7 @@ function Price({ OldPrice, NewPrice }) {
         backgroundColor: "#ffe796",
         borderRadius: "5px",
         width: "300px",
-        height: "90px",
+        height: "40px",
         borderBottomRightRadius: "25px",
         borderBottomLeftRadius: "25px",
     }
