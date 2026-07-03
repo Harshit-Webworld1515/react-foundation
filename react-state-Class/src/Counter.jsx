@@ -12,16 +12,27 @@ export default function Counter() {
     // this is the useState hook that will return an array with two elements
     //state declaration and initialization
     const [count, setCount] = useState(0)
+    const [click, setClick] = useState(5)
     // setCount is a updater function that will update the count value and trigger re-rendering of the component
-    function handleClick() {
+    function handleCount() {
         // setCount(count + 1) is an asynchronous function, it will update the count value and re-render the component 
         setCount(count + 1)
         console.log(count) // this will log the old count value because setCount is asynchronous, it will update the count value after the current function execution is completed
     }
+    function handleClick() {
+        //callback in state function 
+        setClick((click) => {
+            return click + 2;
+        })
+        setClick((click) => {
+            return click + 3;
+        })
+    }
     return (
         <div className="Counter">
-            <h2>No.of clicks: {count}</h2>
-            <button onClick={handleClick}>count click</button>
+            <h2>No.of man: {count}</h2>
+            <button onClick={handleCount}>count men</button>
+            <p onClick={handleClick}> no. of clicks: {click}</p>
         </div>
     )
 }
