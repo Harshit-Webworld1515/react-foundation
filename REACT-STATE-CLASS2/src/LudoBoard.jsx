@@ -5,23 +5,32 @@ export default function LudoBoard() {
     // const [greenMoves, setGreenMoves] = useState(0);
     // const [yellowMoves, setYellowMoves] = useState(0);
     
-    // object state 
+    //state variable as an object with multiple properties
     const [Moves, setMoves] = useState({blue: 0 , red: 0, green: 0, yellow: 0});
+    // state variable as an array with multiple properties
+    const [arr, setArr] = useState(["nomoves"]);
+
     let updateBlueMoves = () => {
         setMoves((prevMove) => ({...prevMove, blue: prevMove.blue + 1}));
+        setArr((prevArr) => [...prevArr, "blue"]);
+
     }   
     let updateRedMoves = () => {
         setMoves((prevMoves) => ({...prevMoves, red: prevMoves.red + 1}));
+        setArr((prevArr) => [...prevArr, "red"]);
     }
     let updateGreenMoves = () => {
         setMoves((prevMoves) => ({...prevMoves, green: prevMoves.green + 1}));
+        setArr((prevArr) => [...prevArr, "green"]);
     }
     let updateYellowMoves = () => {
         setMoves((prevMoves) => ({...prevMoves, yellow: prevMoves.yellow + 1}));
+        setArr((prevArr) => [...prevArr, "yellow"]);
     }   
     return (
         <div>
             <h1>Ludo Board</h1>
+            <p>Moves Array: {arr.join(", ")}</p>
             <div className="board">
                 <p>blue moves= {Moves.blue}</p>
                 <button style={{backgroundColor:"blue"}} onClick={updateBlueMoves}>+1</button>
