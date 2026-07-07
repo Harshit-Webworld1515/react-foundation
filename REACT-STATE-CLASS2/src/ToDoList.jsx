@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import './App.css';
 export default function ToDoList() {
-    const [tasks, setTasks] = useState([{ id: 0, taskName: 'Sample Task', isDone: false }]);
+    const [tasks, setTasks] = useState([{ id: 0, taskName: 'Sample', isDone: false }]);
     const [inputValue, setInputValue] = useState('');
     const addTask = (event) => {
         setInputValue(event.target.value);
@@ -41,9 +42,12 @@ export default function ToDoList() {
         }));
     }
     return (
-        <div>
+        <div className="todo-list">
             <h1>To Do List</h1>
             <input type="text" value={inputValue} onChange={addTask} placeholder="Enter a new task..." />
+            <button onClick={newTask} className='buttn'>
+                Add Task
+            </button>
             <ul>
                 {tasks.map((task) => (
                     <li key={task.id} style={{ textDecoration: task.isDone ? 'line-through' : 'none' }}>
@@ -57,7 +61,7 @@ export default function ToDoList() {
                             Uppercase
                         </button>
                         &nbsp; &nbsp;
-                        <button onClick={()=>workDone(task)}>marked as Done</button>
+                        <button onClick={() => workDone(task)}>marked as Done</button>
                     </li>
                 ))}
             </ul>
@@ -65,9 +69,6 @@ export default function ToDoList() {
             <button onClick={upperCase}>
                 Update to upper case
             </button> <br />
-            <button onClick={newTask}>
-                Add Task
-            </button>
         </div>
     );
 }
