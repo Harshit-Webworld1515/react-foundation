@@ -1,0 +1,32 @@
+ .lottery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ticket {
+    width: 120px;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fff;
+    border: 3px solid #f59e0b;
+    border-radius: 15px;
+
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #d97706;
+
+    box-shadow: 0 8px 18px rgba(245, 158, 11, 0.3);
+    transition: all 0.3s ease;
+}
+
+.ticket:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(245, 158, 11, 0.45);
+}
