@@ -1,0 +1,18 @@
+.Tickeet{
+    /* background: linear-gradient(135deg, #fff8e1, #ffe082); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 12px;
+    border: 2px solid #f11111;
+    border-radius: 6px;
+
+    width: fit-content;
+    margin: 20px auto;
+}
+.Tickeet:hover {
+    transform: scale(1.1);
+    background-color: #fff3cd;
+}
