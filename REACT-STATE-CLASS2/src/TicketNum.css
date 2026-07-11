@@ -3,4 +3,13 @@
     color: #16171d;
     padding: 8px 16px;
     border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #de1c1c;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+.TicketNum:hover{
+    background-color: #f8f9fa;
+    color: #de1c1c;
+    cursor: pointer;
 }

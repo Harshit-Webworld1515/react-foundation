@@ -1,5 +1,5 @@
 .Tickeet{
-    /* background: linear-gradient(135deg, #fff8e1, #ffe082); */
+    background: linear-gradient(135deg, #fff8e1, #ffe082);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,11 +8,33 @@
     padding: 8px 12px;
     border: 2px solid #f11111;
     border-radius: 6px;
+    color: #550110;
 
     width: fit-content;
+    height: 90px;
     margin: 20px auto;
+
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    font-stretch: expanded;
+    font-variant-numeric: proportional-nums;
+    font-variant-east-asian: full-width;
+    font-variant-ligatures: contextual;
+    font-weight: 700;
+    font-size: 20px;
+
+    box-shadow: 0 8px 18px rgba(245, 158, 11, 0.3);
+    transition: all 0.3s ease;
+
+
 }
 .Tickeet:hover {
     transform: scale(1.1);
     background-color: #fff3cd;
+    color: #f11111;
+    box-shadow: 0 10px 25px rgba(245, 158, 11, 0.45);
+
 }
