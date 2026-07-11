@@ -88,6 +88,28 @@ Features
 <img width="472" height="582" alt="image" src="https://github.com/user-attachments/assets/9c9bd3d5-0d01-4ef6-85ae-88bdacb115a2" />
 
 
+## 🎰 Lottery App
+
+### React Concepts
+- Functional Components
+- JSX
+- Props & Default Props
+- Passing Functions as Props
+- useState Hook
+- Conditional Rendering
+- Event Handling
+- Reusable Components
+- Helper Functions
+- CSS Styling
+
+### Features
+- Random Ticket Generation
+- Custom Win Condition
+- Dynamic Ticket Validation
+- Reusable Ticket Component
+- <img width="1076" height="586" alt="Screenshot 2026-07-11 170723" src="https://github.com/user-attachments/assets/05f441da-2078-421f-abbf-dd26f610a346" />
+
+
 🛠 Tech Stack
 Technology	Purpose
 React	UI Library
