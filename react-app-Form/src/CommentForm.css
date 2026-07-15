@@ -1,0 +1,121 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2, #2b5876);
+    font-family: "Poppins", sans-serif;
+} */
+
+.comment-container {
+    width: 430px;
+    padding: 15px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,.25);
+    box-shadow: 0 20px 45px rgba(0,0,0,.25);
+}
+
+.comment-container h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.comment-container label {
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.comment-container input,
+.comment-container textarea {
+    width: 100%;
+    padding: 10px 2px;
+    /* margin-bottom: 15px; */
+    border-radius: 12px;
+    border: 2px solid transparent;
+    outline: none;
+    color: #000;
+    background: rgba(210, 201, 201, 0.9);
+    font-size: 15px;
+    transition: .35s;
+}
+
+.comment-container textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+
+.comment-container input:focus,
+.comment-container textarea:focus{
+    border-color:#7c3aed;
+    box-shadow:0 0 18px rgba(124,58,237,.35);
+    transform: translateY(-2px);
+}
+
+.comment-container .rating{
+    width: 10%;
+    padding: 10px 2px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    outline: none;
+    color: #000;
+    background: rgba(210, 201, 201, 0.9);
+    font-size: 15px;
+    transition: .35s;
+}
+.comment-container button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(135deg,#ff512f,#dd2476);
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.35s;
+    letter-spacing:.5px;
+}
+
+.comment-container button:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 30px rgba(221,36,118,.45);
+}
+
+.comment-container button:active{
+    transform:scale(.98);
+}
+
+::placeholder{
+    color:#777;
+}
+.form-group{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.form-group label{
+    width: 90px;
+    font-weight: 600;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea{
+    flex: 1;
+}
