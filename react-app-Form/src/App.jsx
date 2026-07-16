@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import Form from './Form.jsx'
 import CommentForm from './CommentForm'
+import Counter from './Countereffect'
+import Joker from './Joker'
 
 function App() {
   return (
@@ -11,6 +13,11 @@ function App() {
       <Form />
       <hr />
       <CommentForm/>
+      <hr />
+      <h2>Counter with useEffect</h2>
+      <Counter />
+      <hr />
+      <Joker />
     </div>
   )
 }
