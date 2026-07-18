@@ -109,6 +109,94 @@ Features
 - Reusable Ticket Component
 - <img width="1076" height="586" alt="Screenshot 2026-07-11 170723" src="https://github.com/user-attachments/assets/05f441da-2078-421f-abbf-dd26f610a346" />
 
+---
+
+## 📝 React Form
+
+A simple form application built using React to demonstrate **Controlled Components** and **state management** with `useState`.
+
+### Concepts Practiced
+
+- Functional Components
+- useState Hook
+- Controlled Components
+- Multiple Input Fields
+- Event Handling
+- Form Submission
+- Dynamic State Updates
+- Object State Management
+
+### Features
+
+- 📝 User Input Form
+- ⚡ Real-time State Updates
+- 📩 Form Submission
+- 🔄 Reset Input Fields
+- 📦 Single Object State Management
+
+### Preview
+
+<p align="center"><img width="432" height="237" alt="image" src="https://github.com/user-attachments/assets/40984357-efee-4622-94f4-009726f4d2e5" /></p>
+
+---
+
+## 💬 Comment Form
+
+A comment submission application that demonstrates handling multiple form inputs and dynamically rendering submitted comments.
+
+### Concepts Practiced
+
+- Functional Components
+- useState Hook
+- Controlled Components
+- Form Handling
+- Dynamic Rendering
+- Array State Updates
+- Event Handling
+
+### Features
+
+- 👤 Username Input
+- 💬 Comment Input
+- ⭐ Rating Selection
+- 📋 Display Submitted Comments
+- ⚡ Dynamic UI Rendering
+
+### Preview
+
+<p align="center"><img width="476" height="697" alt="image" src="https://github.com/user-attachments/assets/165a29ee-1c98-46e6-8851-4a3dacb620f5" />
+
+</p>
+
+---
+
+## 😂 Random Joke Generator
+
+A fun React application that fetches random jokes from a public API using the **useEffect Hook** and **Fetch API**.
+
+### Concepts Practiced
+
+- useEffect Hook
+- Fetch API
+- Async / Await
+- API Integration
+- State Management
+- Conditional Rendering
+
+### Features
+
+- 🌐 Fetch Random Joke
+- 😂 Display Setup & Punchline
+- 🔄 Generate New Joke
+- ⚡ Real-time API Calls
+
+### Preview
+
+<p align="center">
+<img width="627" height="431" alt="image" src="https://github.com/user-attachments/assets/a50014a9-5074-4f7f-8d1d-84955068739f" />
+</p>
+
+---
 
 🛠 Tech Stack
 Technology	Purpose
