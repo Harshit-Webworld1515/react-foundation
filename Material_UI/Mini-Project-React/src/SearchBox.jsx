@@ -2,20 +2,53 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import './SearchBox.css'
 import { useState } from 'react';
+import AlertTitle from '@mui/material/AlertTitle';
 
-export default function Searchbox() {
-    //Geocoding Api key and URL
-    const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
-    const API_URL="https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}"
+export default function Searchbox({ updateInfo }) {
     let [city, setCity] = useState("");
+    let [error, setError] = useState(false);
+    //Built-in geocoding in open weather Api
+    const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+    const getWeatherInfo = async () => {
+        try {
+            const response = await fetch(URL);
+            const data = await response.json();
+            console.log(data);
+            let result = {
+                city: city,
+                temp: data.main.temp,
+                tempMin: data.main.temp_min,
+                tempMax: data.main.temp_max,
+                humidity: data.main.humidity,
+                feelsLike: data.main.feels_like,
+                weather: data.weather[0].description,
+            }
+            console.log(result);
+            return result;
+        } catch (err) {
+            console.log(err);
+            // setError("No such place in our api");
+            throw err;
+        }
+    }
 
     let handleChange = (e) => {
         setCity(e.target.value);
     }
-    let handleSubmit=(e)=>{
-        e.preventDefault();
-        console.log(city);
-        setCity("")
+
+    let handleSubmit = async (e) => {
+        try {
+            e.preventDefault();
+            console.log(city);
+            setCity("");
+            let newInfo = await getWeatherInfo();
+            updateInfo(newInfo);
+        } catch (err) {
+            setError(true);
+        }
+
     }
     return (
         <div className='SearchBox'>
@@ -31,6 +64,7 @@ export default function Searchbox() {
                 />&nbsp;
                 <br /><br />
                 <Button variant="contained" type='submit'>Search</Button>
+                {error && <p style={{ color: "red" }}>"Sorry!😒 No such Place exist in our DB"</p>}
             </form>
         </div>
     )
