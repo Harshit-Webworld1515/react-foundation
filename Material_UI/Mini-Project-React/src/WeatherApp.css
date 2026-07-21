@@ -1,0 +1,22 @@
+.weather{
+    display: flex;
+    /* flex-direction: column; */
+    text-align: center;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 35px;
+    /* padding: 40px 20px; */
+
+    background: linear-gradient(
+        135deg,
+        #74b9ff 0%,
+        #a8d8ff 40%,
+        #dfe9f3 100%
+    );
+    
+    align-items: flex-start;
+    width: 100%;
+    padding: 50px 120px;
+    box-sizing: border-box;
+}
