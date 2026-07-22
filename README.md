@@ -198,6 +198,57 @@ A fun React application that fetches random jokes from a public API using the **
 
 ---
 
+# 🌤 SkyCast – Weather App
+
+A modern weather application built with **React**, **Vite**, **Material UI**, and the **OpenWeather API**. Users can search any city to get real-time weather information with a clean, responsive interface and dynamic weather visuals.
+
+### React Concepts Practiced
+
+- Functional Components
+- Component Composition
+- Props
+- useState Hook
+- Event Handling
+- Controlled Components
+- API Integration (Fetch API)
+- Async / Await
+- Environment Variables (.env)
+- Conditional Rendering
+- Dynamic Styling
+- Material UI Components
+- Responsive UI Design
+
+### Features
+
+- 🌍 Search weather by city name
+- 🌡️ Live temperature in Celsius
+- 💧 Humidity and feels-like temperature
+- 📈 Maximum & minimum temperature
+- 🌥️ Weather description
+- 🎨 Dynamic weather backgrounds
+- 🌦️ Weather-based icons
+- ⚠️ Error handling for invalid cities
+- 📱 Responsive Material UI interface
+
+### Tech Stack
+
+- React
+- Vite
+- Material UI
+- OpenWeather API
+- CSS3
+
+### Preview
+
+<p align="center">
+  <img width="1072" height="650" alt="Screenshot 2026-07-21 141126" src="https://github.com/user-attachments/assets/c4597a70-5326-4153-b35f-469b9fe6bef1" />
+
+</p>
+
+🔗 **Project Folder:** `Material_UI/SkyCast-A Mini-Project`
+
+---
+
 🛠 Tech Stack
 Technology	Purpose
 React	UI Library
